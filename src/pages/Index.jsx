@@ -1,15 +1,21 @@
-// Complete the Index page component here
-// Use chakra-ui
-import { Button } from "@chakra-ui/react"; // example
-import { FaPlus } from "react-icons/fa"; // example - use react-icons/fa for icons
+import { Button, Heading, Text, VStack } from "@chakra-ui/react";
 
 const Index = () => {
-  // TODO: Create the website here!
   return (
-    <Button>
-      Hello world! <FaPlus />
-    </Button>
-  ); // example
+    <VStack spacing={8} align="center" justify="center" minHeight="100vh">
+      <Heading as="h1" size="4xl">
+        The Rockers
+      </Heading>
+
+      <Text fontSize="xl" textAlign="center" maxW="600px">
+        The Rockers are an energetic indie rock band known for their electrifying live performances. Get ready to rock out!
+      </Text>
+
+      <Button colorScheme="blue" size="lg">
+        View Upcoming Shows
+      </Button>
+    </VStack>
+  );
 };
 
 export default Index;
